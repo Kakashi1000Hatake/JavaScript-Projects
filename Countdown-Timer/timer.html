@@ -11,22 +11,20 @@
 </head>
 <body>
     <div class="stopWatch">
-            <span class="hh timer" >00</span>
-            <span class="timer" >:</span>
-            <span class="mm timer" >00</span>
-            <span class="timer" >:</span>
-            <span class="ss timer" >00</span>
+        <h1 id="displayTime" class="timer"> 
+            00:00:00
+        </h1>
             <div class="buttons">
-                <button><span class="material-symbols-outlined stop">
+                <button onclick="watchstop()"><span class="material-symbols-outlined stop">
                     stop_circle
                     </span></button>
                 
-                    <button><span class="material-symbols-outlined play">
+                    <button onclick="watchStart()"><span class="material-symbols-outlined play" >
                     play_circle
                     </span></button>
                 
 
-                    <button><span class="material-symbols-outlined reset">
+                    <button onclick="watchreset()"><span class="material-symbols-outlined reset">
                     restart_alt
                     </span></button>
             </div>
