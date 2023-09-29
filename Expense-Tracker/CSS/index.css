@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.full-Body{
+    background-color: gray;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.exp-trk{
+    width: 200px;
+    height: 600px;
+    border: 1px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.exp-trk-box{
+    margin: 5px;
+    padding: 15px;
+    color: white;
+}
+
+.input-box{
+    width: 90%;
+    height: 30%;
+    text-align: center;
+    border: 1px solid red;
+    
+}
+
+.data{
+    border: 1px solid yellow;
+    width: 90%;
+    height: 70%;
+    text-align: center;
+}
+
+/* form  */
+
+.inp-exp{
+    width: 100%;
+    height: 30px;
+    border: none;
+    margin: 5px;
+    /* background: none; */
+}
+
+.exp-date-time{
+    border: none;
+    margin: 7px;
+}
+
+.form-btn{
+    width: 40%;
+    height: 25px;
+    border: none;
+    color: white;
+    margin:3px 5px;
+}
+
+#add-btn{
+    background-color: rgb(37, 199, 37);
+
+}
+
+#reset-btn{
+    background-color: red;
+}
