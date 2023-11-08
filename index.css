@@ -41,5 +41,9 @@ body {
   background-color: rgb(62, 60, 60);
   color: black;
 }
-.projects h1 a:hover {
+
+@media screen and (max-width: 768px) {
+  .projects {
+    width: 80vh;
+  }
 }
