@@ -45,5 +45,6 @@ body {
 @media screen and (max-width: 768px) {
   .projects {
     width: 80vh;
+    text-align: center;
   }
 }
