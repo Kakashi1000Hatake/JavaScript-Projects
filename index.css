@@ -20,6 +20,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
+  padding: 50px;
 }
 
 .projects {
@@ -43,6 +44,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .full {
+    padding: 10px;
+  }
   .projects {
     width: 80vw;
     text-align: center;
