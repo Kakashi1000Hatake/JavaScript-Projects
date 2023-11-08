@@ -46,11 +46,11 @@ body {
 @media screen and (max-width: 768px) {
   .full {
     padding: 10px;
-    height: 100%;
+    height: 100vh;
   }
   .projects {
     width: 80vw;
-    height: 20vh;
+    height: 20%;
     text-align: center;
   }
 }
