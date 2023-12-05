@@ -71,7 +71,6 @@ body {
 
 .pbtm h1 {
   font-size: 50px;
-  
 }
 .bubble {
   width: 40px;
@@ -85,4 +84,13 @@ body {
 
 .bubble:hover {
   background-color: rgb(47, 73, 9);
+}
+
+.btnside {
+  padding: 10px;
+  margin: 10px;
+}
+
+.refresh {
+  display: none;
 }

@@ -2,6 +2,9 @@ var pbtm = document.querySelector(".pbtm");
 var time = document.querySelector(".time");
 var hit = document.querySelector(".hit");
 var points = document.querySelector(".points");
+let play = document.querySelector(".play");
+let refresh = document.querySelector(".refresh");
+
 score = 0;
 var newHit = 0;
 
@@ -16,21 +19,21 @@ function makeBubble() {
   pbtm.innerHTML = clutter;
 }
 
-function runTimer() {
-  var i = time.innerHTML;
-  var timer = setInterval(() => {
-    if (i > 0) {
-      i--;
-      time.textContent = i;
-    } else {
-      i = 0;
-      time.style.backgroundColor = "red";
+// function runTimer() {
+//   var i = time.innerHTML;
+//   var timer = setInterval(() => {
+//     if (i > 0) {
+//       i--;
+//       time.textContent = i;
+//     } else {
+//       i = 0;
+//       time.style.backgroundColor = "red";
 
-      pbtm.innerHTML = `<h1>Game Over <br/>Your Score : ${points.innerHTML}</h1>`;
-      clearInterval(timer);
-    }
-  }, 1000);
-}
+//       pbtm.innerHTML = `<h1>Game Over <br/>Your Score : ${points.innerHTML}</h1>`;
+//       clearInterval(timer);
+//     }
+//   }, 1000);
+// }
 
 function getNewHit() {
   newHit = Math.floor(Math.random() * 10);
@@ -53,6 +56,27 @@ pbtm.addEventListener("click", (dets) => {
   }
 });
 
-getNewHit();
-runTimer();
-makeBubble();
+play.addEventListener("click", function runTimer() {
+  play.style.visibility = "Hidden";
+  var i = time.innerHTML;
+  var timer = setInterval(() => {
+    if (i > 0) {
+      i--;
+      time.textContent = i;
+    } else {
+      refresh.style.display = "block";
+      i = 0;
+      time.style.backgroundColor = "red";
+
+      pbtm.innerHTML = `<h1>Game Over <br/>Your Score : ${points.innerHTML}</h1> `;
+      clearInterval(timer);
+    }
+  }, 1000);
+  getNewHit();
+  makeBubble();
+});
+
+refresh.addEventListener("click", () => {
+  // console.log("clicked");
+  window.location.reload();
+});

@@ -13,7 +13,7 @@ body {
 
 .full {
   width: 100vw;
-  height: 100vh;
+  height: 200vh;
   background-color: lightslategray;
   display: flex;
   align-items: center;
@@ -21,11 +21,13 @@ body {
   flex-wrap: wrap;
   gap: 20px;
   padding: 50px;
+  overflow-x: hidden;
 }
 
 .projects {
+  position: relative;
   border: 1px solid white;
-  width: 40vw;
+  width: 30vw;
   max-width: 50%;
   height: 40vh;
   display: flex;

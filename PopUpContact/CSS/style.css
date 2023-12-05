@@ -1,0 +1,95 @@
+:root {
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
+  background-color: #25252596;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+}
+
+.section button {
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.popUp {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform:translate(-50%,-50%) scale(0.1);
+  z-index: 1;
+  width: 50vw;
+  height: 80vh;
+  background-color: whitesmoke;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.openPop {
+  visibility: visible;
+  top: 50%;
+  transform:translate(-50%,-50%) scale(1);
+}
+
+.popUp form {
+  border: 1px solid #252525;
+  /* padding: 10px; */
+  width: 80%;
+  height: 80%;
+  padding: 5%;
+}
+.popUp form h3{
+    text-align: center;
+}
+
+.form-imp {
+  width: 100%;
+  height: 10%;
+  border: none;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.popUp form button {
+  width: 100%;
+  background-color: greenyellow;
+}
+
+.close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-align: center;
+    background-color: white;
+cursor: pointer;
+}
